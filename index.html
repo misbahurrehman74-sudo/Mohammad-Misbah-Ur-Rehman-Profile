@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Muhammad Misbah ur Rehman | Profile</title>
+
+<style>
+/* ====== GLOBAL ====== */
+body {         
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:0;
+    background:#f4f6f8;
+    color:#333;
+    scroll-behavior:smooth;
+}
+
+/* ====== HEADER ====== */
+header {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+    padding: 140px 20px 60px; /* thoda top padding adjust for overlap */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    position: relative;
+    z-index:1;
+}
+
+.profile-full-box {
+    display:inline-block;
+    background:#2c5364;
+    padding:6px 14px;
+    border-radius:6px;
+    font-size:15px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+header h1 {
+    margin:5px 0;
+    font-size:42px;
+    letter-spacing:1px;
+    text-shadow:1px 1px 4px rgba(0,0,0,0.5);
+}
+
+header p {
+    margin-top:8px;
+    font-size:18px;
+}
+
+/* ====== PROFILE IMAGE ====== */
+.profile-container {
+    max-width:900px;
+    margin: -65px auto 40px; /* negative margin for half overlap */
+    text-align:center;
+    position: relative;
+    z-index: 3; /* above header shadow */
+}
+
+.profile-container img {
+    width:160px;
+    height:160px;
+    border-radius:50%; /* circular */
+    border:5px solid white;
+    box-shadow:0 5px 20px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* ====== NAVIGATION ====== */
+nav {
+    text-align:center;
+    margin:20px 0 40px;
+}
+
+nav a {
+    display:inline-block;
+    text-decoration:none;
+    background:white;
+    color:#2c5364;
+    padding:12px 22px;
+    margin:8px;
+    border-radius:25px;
+    font-weight:bold;
+    border:2px solid #2c5364;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s ease;
+}
+
+nav a:hover {
+    background:#2c5364;
+    color:white;
+    transform:translateY(-3px);
+}
+
+/* ====== CONTENT ====== */
+.container {
+    max-width:900px;
+    margin:20px auto 40px;
+    padding:0 20px;
+}
+
+.intro-card {
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 12px 30px rgba(0,0,0,0.12);
+    border-left:6px solid #2c5364;
+}
+
+.intro-card h2 {
+    margin-top:0;
+    color:#2c5364;
+    font-size:26px;
+}
+
+footer {
+    text-align:center;
+    padding:15px;
+    background:#203a43;
+    color:white;
+    margin-top:40px;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width:600px) {
+    header h1 { font-size:28px; }
+    header p { font-size:14px; }
+    .cv-full-box { font-size:16px; }
+    nav a { padding:8px 14px; font-size:14px; }
+    .profile-container img { width:120px; height:120px; }
+    .intro-card { padding:20px; border-left:4px solid #2c5364; }
+    .intro-card h2 { font-size:22px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="profile-full-box">PROFILE</div>
+    <h1>MUHAMMAD MISBAH UR REHMAN</h1>
+    <p>Project Manager | 31+ Years Experience</p>
+</header>
+
+<!-- Profile Image (Half Overlapping Header) -->
+<div class="profile-container">
+    <img src="profile.jpg" alt="Muhammad Misbah ur Rehman">
+</div>
+
+<!-- Navigation -->
+<nav>
+    <a href="edu.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="exp.html">Experience</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Introduction -->
+<div class="container">
+    <div class="intro-card">
+        <h2>Introduction</h2>
+        <p>
+            Seeking a suitable position in the construction industry where my extensive
+            professional experience, technical knowledge and leadership skills can be
+            effectively utilized for organizational growth. Possessing more than
+            thirty-one years of hands-on experience in civil construction projects,
+            working with renowned consultants, architects and multinational clients.
+        </p>
+    </div>
+</div>
+
+<footer>
+    © 2026 Muhammad Misbah ur Rehman
+</footer>
+
+</body>
+</html>

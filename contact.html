@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact | Muhammad Misbah ur Rehman</title>
+
+<style>
+body{
+    margin:0;
+    font-family:"Segoe UI", Tahoma, sans-serif;
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* Container */
+.container{
+    max-width:900px;
+    margin:50px auto;
+    padding:0 20px;
+}
+
+/* Header */
+header{
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color:white;
+    text-align:center;
+    padding:120px 20px 60px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    margin-bottom:50px;
+}
+
+.profile-full-box{
+    display:inline-block;
+    background:#2c5364;
+    padding:6px 14px;
+    border-radius:6px;
+    font-size:15px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+/* Contact Card */
+.contact-card{
+    background:white;
+    border-radius:16px;
+    padding:30px;
+    margin-top:-30px;
+    box-shadow:0 10px 28px rgba(0,0,0,0.1);
+    border-left:6px solid #2c5364;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+}
+
+/* Profile Image */
+.contact-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:3px solid #2c5364;
+}
+
+/* Buttons */
+.button{
+    display:block;
+    width:100%;
+    margin:4px auto;
+    padding:14px 20px;
+    text-align:center;
+    border-radius:25px;
+    font-weight:bold;
+    font-size:16px;
+    color:white;
+    text-decoration:none;
+    border:none;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+/* 🎯 Staircase Width Style */
+.contact-card a.button:nth-child(3){ max-width:340px; }
+.contact-card a.button:nth-child(4){ max-width:320px; }
+.contact-card a.button:nth-child(5){ max-width:300px; }
+.contact-card button.button:nth-child(6){ max-width:280px; }
+.contact-card a.button:nth-child(8){ max-width:260px; }
+
+.whatsapp{ background:#25D366; }
+.linkedin{ background:#0077B5; }
+.youtube{ background:#FF4500; }
+.email{ background:#007BFF; }
+.phone{ background:#6c63ff; }
+
+.button:hover{
+    transform:translateY(-2px);
+}
+
+/* Phone Numbers Dropdown */
+.phone-numbers{
+    display:none;
+    width:100%;
+    max-width:280px;
+}
+
+.phone-numbers a{
+    display:block;
+    background:#eee;
+    padding:10px;
+    margin-top:4px;
+    border-radius:10px;
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+}
+
+.phone-numbers a:hover{
+    background:#ddd;
+}
+
+/* Contact Form */
+.contact-form{
+    background:white;
+    border-radius:16px;
+    padding:25px;
+    box-shadow:0 10px 28px rgba(0,0,0,0.1);
+    margin-top:30px;
+    border-left:6px solid #2c5364;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:10px;
+    margin-bottom:15px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+.contact-form button{
+    background:#2c5364;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+}
+
+/* Back */
+.back-home{
+    display:inline-block;
+    margin-top:30px;
+    padding:12px 26px;
+    background:#2c5364;
+    color:white;
+    border-radius:25px;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="profile-full-box">PROFILE</div>
+    <h1>MUHAMMAD MISBAH UR REHMAN</h1>
+    <p>Project Manager | 31+ Years Experience</p>
+</header>
+
+<div class="container">
+
+<div class="contact-card">
+
+<img src="profile.jpg">
+
+<h2>Get in Touch</h2>
+
+<a href="https://www.youtube.com/@AMMS-ec1" target="_blank" class="button youtube">
+Visit My YouTube Channel ▶
+</a>
+
+<a href="https://whatsapp.com/channel/0029Vb6aJox0VycDbxQQNO2i" target="_blank" class="button whatsapp">
+Join WhatsApp Group ✅
+</a>
+
+<a href="https://www.linkedin.com/in/mohammad-misbah-ur-rehman-951a4117a" target="_blank" class="button linkedin">
+Visit LinkedIn 🔗
+</a>
+
+<button class="button phone" onclick="toggleNumbers()">
+Contact Numbers 📞
+</button>
+
+<div class="phone-numbers" id="numbers">
+<a href="tel:03218231689">03218231689</a>
+<a href="tel:0335818910">0335818910</a>
+<a href="tel:03338205551">03338205551</a>
+<a href="tel:03452369716">03452369716</a>
+</div>
+
+<a href="mailto:misbahurrehman74@gmail.com" class="button email">
+Send Email ✉
+</a>
+
+</div>
+
+<form class="contact-form">
+<input type="text" placeholder="Your Name">
+<input type="email" placeholder="Your Email">
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button>Send Message</button>
+</form>
+
+<a href="index.html" class="back-home">⬅ Back to Home</a>
+
+</div>
+
+<script>
+function toggleNumbers(){
+let box = document.getElementById("numbers");
+box.style.display = box.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
